@@ -7,9 +7,9 @@ import {
 	Text,
 	Image,
 	useColorModeValue,
-	Center
+	Center,
+	Button
 } from '@chakra-ui/react';
-import { Button } from '../../common/Button';
 import { Link } from 'react-scroll';
 const DURATION = 1000;
 
@@ -53,7 +53,7 @@ export default function HomeHero({ title, subtitle, button }: HomeProps) {
 						<Text as="span">, 2021.</Text>
 						<br />
 					</Heading>
-					<Text color={icp} maxW="56ch" mx="auto" fontSize="lg">
+					<Text color={icp}>
 						{subtitle}
 					</Text>
 					<Stack
@@ -68,7 +68,19 @@ export default function HomeHero({ title, subtitle, button }: HomeProps) {
 							activeClass="active"
 							color="white"
 						>
-							<Button bg="purple.500">
+							<Button
+								bg="purple.500"
+								rounded={'full'}
+								size={'lg'}
+								fontWeight={'normal'}
+								px={6}
+								color='white'
+								w="100%"
+								_hover={{
+									bg: 'purple.600'
+								}}
+								outline={'none'}
+							>
 								{button}
 							</Button>
 						</Link>
@@ -115,21 +127,3 @@ export default function HomeHero({ title, subtitle, button }: HomeProps) {
 		</Container>
 	);
 }
-
-// export const Blob = (props: IconProps) => {
-// 	return (
-// 		<Icon
-// 			width={'100%'}
-// 			viewBox="0 0 578 440"
-// 			fill="none"
-// 			xmlns="http://www.w3.org/2000/svg"
-// 			{...props}>
-// 			<path
-// 				fillRule="evenodd"
-// 				clipRule="evenodd"
-// 				d="M239.184 439.443c-55.13-5.419-110.241-21.365-151.074-58.767C42.307 338.722-7.478 282.729.938 221.217c8.433-61.644 78.896-91.048 126.871-130.712 34.337-28.388 70.198-51.348 112.004-66.78C282.34 8.024 325.382-3.369 370.518.904c54.019 5.115 112.774 10.886 150.881 49.482 39.916 40.427 49.421 100.753 53.385 157.402 4.13 59.015 11.255 128.44-30.444 170.44-41.383 41.683-111.6 19.106-169.213 30.663-46.68 9.364-88.56 35.21-135.943 30.551z"
-// 				fill="currentColor"
-// 			/>
-// 		</Icon>
-// 	);
-// };
