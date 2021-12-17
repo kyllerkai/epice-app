@@ -53,7 +53,7 @@ export default function HomeHero({ title, subtitle, button }: HomeProps) {
 						<Text as="span">, 2021.</Text>
 						<br />
 					</Heading>
-					<Text color={icp}>
+					<Text color={icp} maxW="56ch" mx="auto" fontSize="lg">
 						{subtitle}
 					</Text>
 					<Stack
