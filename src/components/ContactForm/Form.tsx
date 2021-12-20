@@ -103,7 +103,7 @@ export default function Form() {
 								<Stack spacing={4}>
 									<Box>
 										<Input
-											placeholder="Curso"
+											placeholder="Ex: João Nobrega"
 											txt="Nome completo"
 											name="name"
 											children={<AiOutlineUserAdd />}
@@ -115,7 +115,7 @@ export default function Form() {
 									</Box>
 									<Box>
 										<Input
-											placeholder="@Email"
+											placeholder="Ex: exemplo@gmail.com"
 											txt="Coloque seu Email"
 											name="email"
 											children={<AiOutlineMail />}
@@ -127,7 +127,7 @@ export default function Form() {
 									</Box>
 									<Box>
 										<Input
-											placeholder="Curso"
+											placeholder="Ex: INFO, Eletrônica, Visitante..."
 											txt="Nome do curso"
 											name="course"
 											children={<IoMdSchool />}
