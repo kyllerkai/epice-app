@@ -33,7 +33,7 @@ const Palestrantes: React.FC = () => {
           <Stack spacing={8}>
             <SimpleGrid columns={[1, 1, 2]} spacing="40px" pt="3">
               {palestrantes.map((member) => (
-                <Fade>
+                <Fade key={member.id}>
                   <Box borderLeftWidth="4px" borderLeftColor="purple.500" padding="7px" borderRadius="4px" key={member.id}>
                     <Stack direction="column" spacing={6} textAlign="center">
                       <Center>
