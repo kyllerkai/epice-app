@@ -101,6 +101,7 @@ export default function HomeHero({ title, subtitle, button }: HomeProps) {
 							align={'center'}
 							w={'100%'}
 							h={'100%'}
+							loading="lazy"
 							src={
 								'/img/svg/undraw_group_video_re_btu7.svg'
 							}
