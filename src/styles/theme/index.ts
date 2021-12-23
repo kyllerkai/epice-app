@@ -1,5 +1,4 @@
 import { extendTheme } from '@chakra-ui/react';
-// Foundational style overrides
 import styles from './styles';
 import colors from './foundations/colors';
 import radii from './foundations/radii';
